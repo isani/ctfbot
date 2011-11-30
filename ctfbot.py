@@ -1,8 +1,11 @@
-from parser import *
+from general import General
+from parser import Parser
 from token  import *
 
 parser = Parser()
 map = parser.parsemap()
-tokens = parser.parsesituation()
-for token in tokens:
-	print(token)
+general = General(map)
+
+while (1):
+	tokens = parser.parsesituation()
+	general.commandtroops(tokens)
