@@ -3,14 +3,16 @@ from sys import stdin
 
 class Parser:
 	
-	def parse(self):
+	def parsemap(self):
 		line = stdin.readline() # Side
 		line = stdin.readline() # First line of map
 		while line != "\n":
-			# Parse map here
+			# Todo: Parse map here
 			line = stdin.readline()
+		return None
+	
+	def parsesituation(self):
 		line = stdin.readline() # Score
-		
 		tokens = []
 		line = stdin.readline() # First line of tokens
 		while line != "\n":

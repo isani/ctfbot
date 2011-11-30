@@ -1,7 +1,8 @@
 from parser import *
 from token  import *
 
-p = Parser()
-tokens = p.parse()
+parser = Parser()
+map = parser.parsemap()
+tokens = parser.parsesituation()
 for token in tokens:
 	print(token)
