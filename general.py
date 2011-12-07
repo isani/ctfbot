@@ -9,3 +9,4 @@ class General:
 		for token in tokens:
 			if type(token) == Soldier:
 				print(token.name + " S")
+		print("")
